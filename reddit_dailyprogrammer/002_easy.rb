@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+# https://www.reddit.com/r/dailyprogrammer/comments/pjbj8/easy_challenge_2/
 
 puts "Calculate potential earnings!"
 print "Enter the number of users on your site: "

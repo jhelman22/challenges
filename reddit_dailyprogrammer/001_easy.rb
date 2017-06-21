@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+# https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/
 
 puts "What's your name?"
 name = gets.chomp

@@ -1,4 +1,5 @@
-#!/usr/bin/ruby
+# https://www.reddit.com/r/dailyprogrammer/comments/pihtx/intermediate_challenge_1/
+
 require 'date'
 
 class Scheduler

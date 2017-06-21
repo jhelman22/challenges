@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+# https://www.reddit.com/r/dailyprogrammer/comments/pii6j/difficult_challenge_1/
 
 puts "Pick a number between 1 and 100 and I'll start guessing..."
 puts "Got your number? Press ENTER to start"
