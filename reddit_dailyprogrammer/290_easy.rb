@@ -3,8 +3,14 @@
 def kaprekars(start,finish)
   (start..finish).map do |i|
     squared = (i * i).to_s
-    split = squared.length / 2
-    squared[0...split].to_i + squared[split..-1].to_i == i ? i : nil
+    kap = false
+    (1...squared.length).each do |split|
+      a = squared[0...split].to_i
+      b = squared[split..-1].to_i
+      kap = a > 0 && b > 0 && a + b == i
+      break if kap
+    end
+    kap ? i : nil
   end.reject(&:nil?)
 end
 
