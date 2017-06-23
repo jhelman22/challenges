@@ -1,0 +1,32 @@
+ld a,14
+out (0),a
+ld a,12
+out (0),a
+ld a,8
+out (0),a
+out (0),a
+ld a,12
+out (0),a
+ld a,14
+out (0),a
+ld b,3
+triple:
+ld a,126
+out (0),a
+ld a,60
+out (0),a
+ld a,24
+out (0),a
+djnz triple
+ld a,1
+ld b,9
+loop:
+out (0),a
+rlca
+djnz loop
+ld a,2
+ld b,9
+loop:
+out (0),a
+rrca
+djnz loop

@@ -1,7 +1,7 @@
 # https://www.reddit.com/r/dailyprogrammer/comments/5bn0b7/20161107_challenge_291_easy_goldilocks_bear/
 
 # INPUT FILE
-input = 'reddit_dailyprogrammer/291_easy/sample.txt'
+input = 'reddit_dailyprogrammer/291/sample.txt'
 
 goldie_weight = nil
 goldie_temp = nil

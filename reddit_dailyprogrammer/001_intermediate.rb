@@ -5,7 +5,7 @@ require 'date'
 class Scheduler
   def initialize
     @events = []
-    File.foreach('001_intermediate/events.csv') do |line|
+    File.foreach('001/events.csv') do |line|
       event_arr = line.chomp.split(",")
       @events.push({name: event_arr[0], date: Date.parse(event_arr[1])}) unless event_arr.empty?
     end
@@ -81,7 +81,7 @@ class Scheduler
   end
 
   def exit_scheduler
-    f = File.open('001_intermediate/events.csv', 'w+')
+    f = File.open('001/events.csv', 'w+')
     f.puts @events.map{|event| "#{event[:name]},#{event[:date]}"}.join("\n")
     f.close
 
